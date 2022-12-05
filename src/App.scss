@@ -1,0 +1,112 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(127, 98, 255, 0.664);
+  background-image:
+    radial-gradient(at 100% 100%, hsla(0, 0%, 0%, 0.60) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(0, 0%, 0%, 0.40) 0px, transparent 50%);
+  margin: 0;
+
+
+  #calculator {
+    position: absolute;
+    padding: 6px;
+    width: 334px;
+    height: 410px;
+    background-color: black;
+    text-align: center;
+    -webkit-box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 43px 8px rgba(0, 0, 0, 0.75);
+    border-radius: px;
+
+    #displayWrap {
+      width: 96%;
+      height: 4rem;
+      margin-top: 7px;
+      margin-left: 8px;
+      margin-bottom: 0.5rem;
+      background-color: rgb(43, 43, 43);
+      color: rgb(240, 200, 71);
+      text-align: end;
+      font-family: Share Tech Mono, monospace;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      #display {
+        padding: 4px;
+      }
+
+      .output {
+        font-size: larger;
+        padding-right: 0.5rem;
+      }
+
+      .currentInput {
+
+        font-size: medium;
+        padding-right: 0.5rem;
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+
+    #numpad {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+}
+
+button {
+  background-color: #242424;
+  color: white;
+  padding: 0;
+}
+
+button:hover {
+  transition: 400ms;
+  border: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+button:active {
+  transition: 60ms;
+  background-color: #969696;
+
+}
+
+
+
+.sm {
+  width: 80px;
+  height: 65px;
+}
+
+
+.lg {
+  width: 160px;
+  height: 65px;
+}
+
+.ac {
+  background-color: rgb(146, 23, 23);
+}
+
+.op {
+  background-color: rgb(100, 100, 100);
+}
+
+.eq {
+  background-color: rgb(59, 59, 153);
+}
+
+.dec {
+  background-color: rgb(43, 78, 42);
+}
